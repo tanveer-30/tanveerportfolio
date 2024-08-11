@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attaru Tanveer Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<style>
+    body{
+        background-color: rgb(53, 4, 106);
+        color:rgb(255, 255, 255);
+        font-family: 'poppins', sans-serif;
+    }
+*{
+    margin: 0;
+    padding: 0;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100px;
+    background-color:rgb(154, 82, 208);
+}
+nav ul{
+    display: flex;
+    justify-content: center;
+}
+nav li{
+    list-style: none;
+    margin: 0 25px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: aliceblue;
+}
+nav ul li a:hover{
+    color: rgb(145, 145, 219);
+}
+.left{
+    font: size 2em;
+    color: aliceblue; 
+}
+.leftsection .btn{
+    padding: 12px;
+}
+.firstsection{
+    display: flex;
+    justify-content: space-around;
+    margin: 80px ;
+}
+.firstsection div{
+    width:auto ;
+}
+.leftsection{
+    width: 50%;
+    font-size: 3rem;
+    margin: 30px;
+
+}
+.rightsection{
+    width: 100px;
+
+}
+.purple{
+    color: blueviolet;
+}
+#element{
+    color: blueviolet;
+}
+</style>
+<body>
+    <header>
+        <nav>
+            <div class="left">
+                Tanveer's Portfolio
+            </div>
+            <div class="right">
+                <ul>
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="/projects.html">Projects</a></li>
+                    <li><a href="/resume.html">Resume</a></li>
+                    <li><a href="/contact.html">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="firstsection">
+            <div class="leftsection">Hi, My Name is<span class="purple">Tanveer</span>
+            <div>I am Computer Science Engineering Student and i have  skills on  </div>
+            <span id="element"></span>
+            <div style="text-decoration: none;" >
+               <button style="font-family: cursive; font-size: large;" type="button" class="btn btn-primary"><a href="/CV_2024073021240031.pdf">Download Resume</a></button>
+            </div>
+        </div>
+            <div class="rightsection">
+                <img src="img1.png" alt="img1" height="500px" width="500px">
+            </div>
+        </section>
+    </main>
+    <main>
+        <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+        <script>
+            var typed = new Typed('#element', {
+              strings: ['<i>Web development</i>', '<i>Programming Languages</i>','<i>Database Management Systems</i>'],
+              typeSpeed: 50,
+            });
+          </script>
+    </main>
+    <footer>
+        <div style="text-align: center;">
+            Copy rght &#169;  | All rights reserved
+        </div>
+    </footer>
+</body>
+</html>
